@@ -1,11 +1,10 @@
 <?php
 if($_POST)
 {
-	$to_email   	= "sir.tanta@icloud.com"; //Recipient email, Replace with own email here
+	$to_email   	= "funmiakinola200@yahoo.com"; //Recipient email, Replace with own email here
 
 	//check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-
 		$output = json_encode(array( //create JSON data
 			'type'=>'error',
 			'text' => 'Sorry Request must be Ajax POST'
